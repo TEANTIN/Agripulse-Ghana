@@ -1,0 +1,6 @@
+{
+  "name": "AgriPulse Ghana - SE Capstone Platform",
+  "description": "Smart Agri-Supply Chain & Quality Logistics Platform with embedded Advanced Software Engineering Lifecycle & SRS Documentation Suite (CSCD602).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

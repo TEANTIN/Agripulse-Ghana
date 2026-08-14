@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User profiles for authenticated inspectors, officers, and clerks",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string" },
+        "assignedDepot": { "type": "string" },
+        "phone": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "batches": {
+      "title": "Produce Batch",
+      "description": "Agricultural cocoa batch registered and inspected",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "batchCode": { "type": "string" },
+        "farmerName": { "type": "string" },
+        "farmerId": { "type": "string" },
+        "location": { "type": "string" },
+        "cropType": { "type": "string" },
+        "weightKg": { "type": "number" },
+        "moistureContent": { "type": "number" },
+        "moldPercentage": { "type": "number" },
+        "defectPercentage": { "type": "number" },
+        "slatePercentage": { "type": "number" },
+        "beanCountPer100g": { "type": "number" },
+        "grade": { "type": "string" },
+        "status": { "type": "string" },
+        "assignedInspector": { "type": "string" },
+        "seedImageUrl": { "type": "string" },
+        "aiNotes": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["batchCode", "farmerName", "status"]
+    },
+    "waybills": {
+      "title": "Waybill",
+      "description": "Logistics waybill for cocoa batch transport",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "waybillNumber": { "type": "string" },
+        "batchCode": { "type": "string" },
+        "driverName": { "type": "string" },
+        "truckRegNumber": { "type": "string" },
+        "departureLocation": { "type": "string" },
+        "destinationWarehouse": { "type": "string" },
+        "sealNumber": { "type": "string" },
+        "status": { "type": "string" },
+        "dispatchDate": { "type": "string" },
+        "estimatedArrival": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["waybillNumber", "batchCode", "status"]
+    }
+  }
+}
